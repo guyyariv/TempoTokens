@@ -1,6 +1,8 @@
 # Diverse and Aligned Audio-to-Video Generation via Text-to-Video Model Adaptation
 This repo contains the official PyTorch implementation of  [*Diverse and Aligned Audio-to-Video Generation via Text-to-Video Model Adaptation*](https://pages.cs.huji.ac.il/adiyoss-lab/TempoTokens/)
 
+[![Video](https://img.youtube.com/vi/r8Sik7vGfsE/1.jpg)](https://www.youtube.com/shorts/r8Sik7vGfsE)
+
 # Abstract
 We consider the task of generating diverse and realistic videos guided by natural audio samples from
 a wide variety of semantic classes. For this task, the videos are required to be aligned both
