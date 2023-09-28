@@ -1,7 +1,7 @@
 # Diverse and Aligned Audio-to-Video Generation via Text-to-Video Model Adaptation
 This repo contains the official PyTorch implementation of  [*Diverse and Aligned Audio-to-Video Generation via Text-to-Video Model Adaptation*](https://pages.cs.huji.ac.il/adiyoss-lab/TempoTokens/)
 
-[![Video](https://img.youtube.com/vi/r8Sik7vGfsE/1.jpg)](https://www.youtube.com/shorts/r8Sik7vGfsE)
+https://github.com/guyyariv/TempoTokens/assets/89798559/60a337d4-fb98-4255-bd34-a2b3d86a18de
 
 # Abstract
 We consider the task of generating diverse and realistic videos guided by natural audio samples from
@@ -36,7 +36,7 @@ And initialize an Accelerate environment with:
 ```angular2html
 accelerate config
 ```
-Download BEATs pre-trained model 
+Download [BEATs](https://github.com/microsoft/unilm/blob/master/beats/BEATs.py) pre-trained model 
 ```
 mkdir -p models/BEATs/ && wget "https://valle.blob.core.windows.net/share/BEATs/BEATs_iter3_plus_AS2M_finetuned_on_AS2M_cpt2.pt?sv=2020-08-04&st=2023-03-01T07%3A51%3A05Z&se=2033-03-02T07%3A51%3A00Z&sr=c&sp=rl&sig=QJXmSJG9DbMKf48UDIU1MfzIro8HQOf3sqlNXiflY1I%3D" -P "models/BEATs/"
 ```
