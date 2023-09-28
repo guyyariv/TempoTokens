@@ -71,7 +71,7 @@ accelerate launch inference.py --mapper_weights models/audioset_drum/learned_emb
 ```
 Moreover, you have the capability to generate a video from your own audio, as demonstrated below:
 ```angular2html
-accelerate launch inference.py --mapper_weights models/TempoTokens/learned_embeds.pth --audio_path ./audio/path
+accelerate launch inference.py --mapper_weights models/TempoTokens/learned_embeds.pth --audio_path /audio/path
 ```
 
 # Acknowledgments
