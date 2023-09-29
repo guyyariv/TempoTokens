@@ -22,7 +22,7 @@ our method generates videos that are better aligned with the input sound, both w
 content and temporal axis. We also show that videos produced by our method present higher visual
 quality and are more diverse.
 
-<a href="https://arxiv.org/abs/XXXXX"><img src="https://img.shields.io/badge/arXiv-XXXXX-b31b1b.svg" height=22.5></a>
+<a href="https://arxiv.org/pdf/2309.16429.pdf"><img src="https://img.shields.io/badge/arXiv-2309.16429-b31b1b.svg" height=22.5></a>
 <a href="https://pages.cs.huji.ac.il/adiyoss-lab/TempoTokens/"><img src="https://img.shields.io/static/v1?label=Project&message=Website&color=red" height=20.5></a> 
 
 [//]: # ([![Hugging Face Spaces]&#40;https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue&#41;]&#40;https://huggingface.co/spaces/GuyYariv/AudioToken&#41;)
@@ -152,6 +152,14 @@ Our code is partially built upon [Text-To-Video-Finetuning](https://github.com/E
 # Cite
 If you use our work in your research, please cite the following paper:
 ```
+@misc{yariv2023diverse,
+      title={Diverse and Aligned Audio-to-Video Generation via Text-to-Video Model Adaptation}, 
+      author={Guy Yariv and Itai Gat and Sagie Benaim and Lior Wolf and Idan Schwartz and Yossi Adi},
+      year={2023},
+      eprint={2309.16429},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
 ```
 
 # License
