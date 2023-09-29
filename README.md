@@ -22,7 +22,7 @@ our method generates videos that are better aligned with the input sound, both w
 content and temporal axis. We also show that videos produced by our method present higher visual
 quality and are more diverse.
 
-<a href="https://arxiv.org/pdf/2309.16429.pdf"><img src="https://img.shields.io/badge/arXiv-2309.16429-b31b1b.svg" height=22.5></a>
+<a href="https://arxiv.org/abs/2309.16429"><img src="https://img.shields.io/badge/arXiv-2309.16429-b31b1b.svg" height=22.5></a>
 <a href="https://pages.cs.huji.ac.il/adiyoss-lab/TempoTokens/"><img src="https://img.shields.io/static/v1?label=Project&message=Website&color=red" height=20.5></a> 
 
 [//]: # ([![Hugging Face Spaces]&#40;https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue&#41;]&#40;https://huggingface.co/spaces/GuyYariv/AudioToken&#41;)
