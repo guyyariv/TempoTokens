@@ -442,7 +442,7 @@ if __name__ == "__main__":
 
     # fmt: off
     parser = argparse.ArgumentParser()
-    parser.add_argument("-m", "--model", type=str, required=True, help="HuggingFace repository or path to model checkpoint directory")
+    parser.add_argument("-m", "--model", type=str, default='cerspense/zeroscope_v2_576w', help="HuggingFace repository or path to model checkpoint directory")
     parser.add_argument("--mapper_weights", type=str, required=True, help="The path to the embedder weights")
     parser.add_argument("-p", "--prompt", type=str, default="<temp> <local1> <local2> <local3> <local4> <class>", help="Text prompt to condition on")
     parser.add_argument("-n", "--negative-prompt", type=str, default=None, help="Text prompt to condition against")
