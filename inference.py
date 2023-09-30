@@ -106,7 +106,7 @@ def initialize_pipeline(
         del _unet  # This is a no op
         unet = UNet3DConditionModel.from_pretrained(model, subfolder="unet")
         at_embedder.eval()
-        at_embedder.load_state_dict(torch.load(args.embedder_weights))
+        at_embedder.load_state_dict(torch.load(args.mapper_weights))
         beats.eval()
 
         y, sr = torchaudio.load(output_audio)
