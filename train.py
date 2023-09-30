@@ -42,8 +42,7 @@ from transformers import CLIPTokenizer
 from modules.pipelines.pipeline_audio_to_video import TextToVideoSDPipeline
 from modules.beats.BEATs import BEATs, BEATsConfig
 from modules.temp_tokens.embedder import TempEmbedder
-from modules.text_encoder.modeling_clip_temp_token import CLIPTextModel
-from modules.text_encoder.modeling_clip import CLIPEncoder
+from modules.text_encoder.modeling_clip_tempotokens import CLIPTextModel, CLIPEncoder
 from utils.dataset import VideoJsonDataset, SingleVideoDataset, \
     ImageDataset, VideoFolderDataset, CachedDataset
 from einops import rearrange

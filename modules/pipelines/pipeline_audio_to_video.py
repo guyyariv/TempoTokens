@@ -26,7 +26,7 @@ from diffusers.utils import (
     is_accelerate_available,
     is_accelerate_version,
     logging,
-    randn_tensor,
+    # randn_tensor,
     replace_example_docstring,
 )
 from diffusers.pipelines.pipeline_utils import DiffusionPipeline

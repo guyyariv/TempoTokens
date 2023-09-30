@@ -102,6 +102,7 @@ def initialize_pipeline(
                 f"The tokenizer already contains the token <*>. Please pass a different"
                 " `placeholder_token` that is not already in the tokenizer."
             )
+        text_encoder.resize_token_embeddings(len(tokenizer))
 
         del _unet  # This is a no op
         unet = UNet3DConditionModel.from_pretrained(model, subfolder="unet")
@@ -397,7 +398,7 @@ def inference(
 
         # prepare prompts
         compel = Compel(tokenizer=pipe.tokenizer, text_encoder=pipe.text_encoder)
-        prompt_embeds, negative_prompt_embeds = compel(prompt), compel(negative_prompt) if negative_prompt else None
+        prompt_embeds, negative_prompt_embeds = None, compel(negative_prompt) if negative_prompt else None
 
         # prepare input latents
         init_latents = prepare_input_latents(
@@ -476,8 +477,6 @@ if __name__ == "__main__":
     # =========================================
     # ====== validate and prepare inputs ======
     # =========================================
-
-    args.output_dir = f"{args.output_dir}/{args.model}"
 
     args.prompt = [args.prompt] * args.batch_size
     if args.negative_prompt is not None:

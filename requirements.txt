@@ -14,3 +14,4 @@ opencv-python
 pydantic
 compel
 positional-encodings
+moviepy

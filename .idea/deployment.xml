@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="Always" serverName="guyyariv1@arion-02.cs.huji.ac.il:22 (2)" remoteFilesAllowedToDisappearOnAutoupload="false">
+    <serverData>
+      <paths name="guyyariv1@arion-02.cs.huji.ac.il:22 (2)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/cs/labs/adiyoss/guyyariv1/tempotokens" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myAutoUpload" value="ALWAYS" />
+  </component>
+</project>
