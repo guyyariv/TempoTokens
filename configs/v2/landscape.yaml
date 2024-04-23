@@ -98,7 +98,7 @@ train_data:
   fallback_prompt: '<temp> <local1> <local2> <local3> <local4> <class>'
 
   # 'folder'
-  path:
+  path: "path/to/dataset_folder"
 
   dataset_name: 'landscape'
 
