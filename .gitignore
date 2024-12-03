@@ -3,3 +3,14 @@
 /models/beats/
 /scripts/
 /synthetic_testset
+/datasets
+/__pycache__
+/models/__pycache__
+/models
+/modules/beats/__pycache__
+/modules/fga/__pycache__
+/modules/pipelines/__pycache__
+/modules/temp_tokens/__pycache__
+/modules/text_encoder/__pycache__
+/modules/unet/__pycache__
+/utils/__pycache__
