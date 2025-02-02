@@ -2,7 +2,7 @@ accelerate
 torch
 torchvision
 torchaudio
-git+https://github.com/huggingface/diffusers.git
+diffusers==0.31.0
 git+https://github.com/cloneofsimo/lora.git
 transformers
 einops

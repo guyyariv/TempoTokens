@@ -25,8 +25,8 @@ from diffusers.utils import BaseOutput, logging
 from diffusers.models.attention_processor import AttentionProcessor, AttnProcessor
 from diffusers.models.embeddings import TimestepEmbedding, Timesteps
 from diffusers.models.modeling_utils import ModelMixin
-from diffusers.models.transformer_temporal import TransformerTemporalModel
-from diffusers.models.unet_3d_blocks import (
+from diffusers.models import TransformerTemporalModel
+from diffusers.models.unets.unet_3d_blocks import (
     CrossAttnDownBlock3D,
     CrossAttnUpBlock3D,
     DownBlock3D,
