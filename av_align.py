@@ -71,6 +71,11 @@ def find_local_max_indexes(arr, fps):
     """
     Find local maxima in a list.
 
+    Note:
+        In this implementation, local maxima with an optical flow magnitude less than 0.1
+        are ignored. This has always been the case to prevent static scenes from being
+        incorrectly calculated as peaks due to very small optical flow.
+
     Args:
         arr (list): List of values to find local maxima in.
         fps (float): Frames per second, used to convert indexes to time.
@@ -78,13 +83,12 @@ def find_local_max_indexes(arr, fps):
     Returns:
         local_extrema_indexes (list): List of times (in seconds) where local maxima occur.
     """
-
     local_extrema_indexes = []
-
+    n = len(arr)
     for i in range(1, n - 1):
-        if arr[i - 1] < arr[i] > arr[i + 1]:  # Local maximum
+        # Only consider local maxima with magnitude at least 0.1
+        if arr[i - 1] < arr[i] > arr[i + 1] and arr[i] >= 0.1:
             local_extrema_indexes.append(i / fps)
-
     return local_extrema_indexes
 
 
@@ -134,6 +138,10 @@ def calc_intersection_over_union(audio_peaks, video_peaks, fps):
     """
     Calculate Intersection over Union (IoU) between audio and video peaks.
 
+    Note:
+        A video peak is matched to at most one audio peak, as has always been the case,
+        ensuring that a single video peak does not correspond to multiple audio peaks.
+
     Args:
         audio_peaks (list): List of audio peak times (in seconds).
         video_peaks (list): List of video peak times (in seconds).
@@ -143,10 +151,12 @@ def calc_intersection_over_union(audio_peaks, video_peaks, fps):
         iou (float): Intersection over Union score.
     """
     intersection_length = 0
+    used_video_peaks = [False] * len(video_peaks)
     for audio_peak in audio_peaks:
-        for video_peak in video_peaks:
-            if video_peak - 1 / fps < audio_peak < video_peak + 1 / fps:
+        for j, video_peak in enumerate(video_peaks):
+            if not used_video_peaks[j] and video_peak - 1 / fps < audio_peak < video_peak + 1 / fps:
                 intersection_length += 1
+                used_video_peaks[j] = True
                 break
     return intersection_length / (len(audio_peaks) + len(video_peaks) - intersection_length)
 
