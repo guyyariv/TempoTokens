@@ -1,4 +1,4 @@
-# Diverse and Aligned Audio-to-Video Generation via Text-to-Video Model Adaptation
+# [AAAI 2024] Diverse and Aligned Audio-to-Video Generation via Text-to-Video Model Adaptation
 This repo contains the official PyTorch implementation of  [*Diverse and Aligned Audio-to-Video Generation via Text-to-Video Model Adaptation*](https://pages.cs.huji.ac.il/adiyoss-lab/TempoTokens/)
 
 https://github.com/guyyariv/TempoTokens/assets/89798559/753cc371-33a6-4574-b049-0f570f07a389
